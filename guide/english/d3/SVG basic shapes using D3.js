@@ -141,9 +141,45 @@ So fixing our simplest case, our JavaScript code would look like:
 Fantastic - now the line is visible!
 
 The necessary SVG attributes for drawing a straight line are the "x1", "y1", "x2", "y2", "stroke" and "stroke-width".
-Note - We don't use a style method with the line. Because ‘line’ elements are single lines and thus are geometrically one-dimensional, 
-       they have no interior. Which is why to style them we need to deal with the "stroke" color and "stroke-width".
+Note - We do not use a style method with the line. Because ‘line’ elements are single lines and thus are geometrically one-dimensional, 
+       they have no interior. 
+Which is why to style them we need to deal with the "stroke" color and "stroke-width".
 Notice that the important attributes we need to draw an SVG Straight Line in D3.js are - x1, y1, x2, y2, stroke-width and stroke.
 
 ****************************************************************************************************************************************
+Drawing Polyline & Polygon SVG Basic Shapes using D3.js
+
+Polyline Example & Code:
+
+<svg width="50" height="50">
+   <polyline fill="none" stroke="blue" stroke-width="2"
+     points="05,30
+             15,30
+             15,20
+             25,20
+             25,10
+             35,10" />
+ </svg>
+
+Polygon Example & Code:
+
+<svg width="50" height="50">
+  <polygon fill="yellow" stroke="blue" stroke-width="2"
+    points="05,30
+            15,10
+            25,30" />
+</svg>
+
+Using the Circle, Rectangle, Ellipse, and Straight Line examples, you can probably guess that to
+  build a Polyline and Polygon, you will need a "stroke", "stroke-width" and "points". And "fill" for the Polygon.
+
+However, as you can see from the examples above - the points attribute contains a list of points 
+  where the x and y are separated by comas and different x and y coordinates are separated by spaces.
+
+Building this out easily in D3.js is not pretty. Because D3.js loves data visualization and pretty things, 
+  the D3.js convention is to use the D3.svg.line() generator for polylines and polygons.
+  
+  
+*****************************************************************************************************************************
+ 
 
