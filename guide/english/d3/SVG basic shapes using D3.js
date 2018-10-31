@@ -141,7 +141,7 @@ So fixing our simplest case, our JavaScript code would look like:
 Fantastic - now the line is visible!
 
 The necessary SVG attributes for drawing a straight line are the "x1", "y1", "x2", "y2", "stroke" and "stroke-width".
-Note - We don't use a style method with the line. Because ‘line’ elements are single lines and thus are geometrically one-dimensional, 
+Note - We do not use a style method with the line. Because ‘line’ elements are single lines and thus are geometrically one-dimensional, 
        they have no interior. Which is why to style them we need to deal with the "stroke" color and "stroke-width".
 Notice that the important attributes we need to draw an SVG Straight Line in D3.js are - x1, y1, x2, y2, stroke-width and stroke.
 
