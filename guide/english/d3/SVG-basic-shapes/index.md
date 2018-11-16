@@ -1,3 +1,6 @@
+
+title:SVG Basic Shapes using d3.js
+
 We can then make the process of drawing a circle as two step process:
 1. Make an SVG container (the SVG Coordinate Space).
 2. Draw the circle
